@@ -1,0 +1,182 @@
+html {
+    min-width: 600px !important;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    position: relative !important;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -2;
+}
+
+.font-32 {
+    font-size: 32px !important;
+}
+
+.font-28 {
+    font-size: 28px !important;
+}
+
+nav {
+    margin-top: 52px !important;
+    margin-bottom: 0px !important;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.playing-field-container {
+    margin-top: 36px !important;
+    margin-bottom: 0px !important;
+}
+
+.my-playing-field-block {
+    margin-right: 32px !important;
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.opponent-playing-field-block {
+    margin-right: 0px !important;
+    margin-left: 32px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.field-owner-name-me, .field-owner-name-opponent {
+    color: #183D71 !important;
+    margin-top: 20px !important;
+    margin-bottom: 0px !important;
+}
+
+.parking-ships {
+    margin-top: 32px !important;
+    margin-bottom: 40px !important;
+    background-color: #EAF2FF !important;
+    border-color: #4C6383 !important;
+    border-width: 4px !important;
+    border-radius: 20px !important;
+}
+
+.deck4-block, .deck3-block, .deck2-block, .deck1-block {
+    margin-top: 0px !important;
+    margin-bottom: 28px !important;
+    padding: 0px !important;
+}
+
+.deck4, .deck3, .deck2, .deck1 {
+    margin-right: 15px !important;
+    margin-left: 0px !important;
+    padding: 0px !important;
+}
+
+.text-ships-balance {
+    margin-top: 8px !important;
+    margin-bottom: 10px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.btn {
+    font-size: 28px !important;
+    height: 63px !important;
+    width: 220px !important;
+    border-radius: 20px !important;
+    background-color:  #183D71;
+}
+
+.stop-game-btn {
+    width: 278px !important;
+    margin-top: 16px !important;
+    margin-bottom: 47px !important;
+}
+
+.text-stop-game, .start-page-link {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.settings-page-link {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.stopGameModal-no-btn {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+@media (max-width: 1200px){
+    .my-playing-field-block {
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .opponent-playing-field-block  {
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+        margin-top: 17px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .playing-field-container {
+        width: 528px !important;
+        margin-top: 42px !important;
+    }
+
+    .playing-field {
+        width: 528px !important;
+    }
+
+    .ships-container {
+        width: 528px !important;
+    }
+
+    .parking-ships {
+        margin-top: 42px !important;
+        width: 499px !important;
+        height: 192px !important;     
+    }
+
+    .text-ships-balance {
+        margin-bottom: 15px !important;
+    }
+
+    .deck4-block, .deck3-block {
+        margin-bottom: 13px !important;
+    }
+
+    .stop-game-btn {
+        margin-top: 61px !important;
+        margin-bottom: 53px !important;
+    }
+}
+
+.modal-content {
+    border-color: #4C6383 !important;
+    border-width: 4px !important;
+    border-radius: 20px !important;
+}
+
+.modal-header, .modal-footer {
+    border: none;
+    color: #183D71 !important;
+    font-weight: bold !important;
+}
+
+.modal-title {
+    margin-top: 27px !important;
+}

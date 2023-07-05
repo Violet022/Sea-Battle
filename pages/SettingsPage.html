@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/settingsPage.css"/>
+        <title>Sea Battle</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-light">
+            <div class="col-2 start-page-link">
+                <a class="navbar-brand font-24" href="StartPage.html" style="color: #183D71;">
+                    <span style="width: 16px; height: 16px; color: #183D71;">
+                        <i class="fas fa-arrow-left"></i>
+                    </span>
+                    Назад
+                </a>
+            </div>
+            <div class="col-8 logo text-center">
+                <a href="StartPage.html">
+                    <img src="../images/logo.png" class="mx-auto d-block" alt="SeaBattle Logotype" width="234" height="58">
+                </a>
+            </div>
+            <div class="col-2"></div>
+        </nav>
+        <div class="container level-settings-container mx-auto" style="width: 786px;">
+            <div class="row level-label-row justify-content-center mx-0">
+                <p class="font-28">Выберите уровень</p>
+            </div>
+            <div class="row level-buttons-row justify-content-md-between justify-content-center mx-0">
+                <button id="easy" type="button" class="btn btn-primary level-btn active m-1 m-md-0" data-toggle="tooltip" data-placement="bottom" title="На данном уровне расстановка кораблей противника определяется с использованием наиболее распространенной схемы в рамках основных правил (п.2). Выстрелы же осуществляются рандомно.">
+                    Легкий
+                </button>
+                <button id="medium" type="button" class="btn btn-primary level-btn m-1 m-md-0" data-toggle="tooltip" data-placement="bottom" title="На данном уровне расстановка кораблей противника происходит согласно более сложным схемам, нежели на легком уровне. Выстрелы осуществляются по одному из алгоритмов, однако при попадании в цель дальнейшие выстрелы по соседним клеткам делаются рандомно.">
+                    Средний
+                </button>
+                <button id="hard" type="button" class="btn btn-primary level-btn m-1 m-md-0" data-toggle="tooltip" data-placement="bottom" title="На данном уровне корабли расставляются согласно сложным схемам. Выстрелы делаются по одному из нескольких алгоритмов, и при попадании в цель дальнейшие выстрелы противником будут на поражение (при попадании в конкретную клетку противник сразу же определяет расположение всего корабля и обстреливает его).">
+                    Сложный
+                </button>
+            </div>
+        </div>
+        <div class="container field-settings-container mx-auto" style="width: 786px;">
+            <div class="row field-size-label-row justify-content-center mx-0">
+                <p class="font-28">Выберите размер поля</p>
+            </div>
+            <div class="row field-size-buttons-row justify-content-md-between justify-content-center mx-0">
+                <button id="ten" type="button" class="btn btn-primary field-size-btn m-1 m-md-0 active">10x10</button>
+                <button id="fifteen" type="button" class="btn btn-primary field-size-btn m-1 m-md-0">15x15</button>
+                <button id="twenty" type="button" class="btn btn-primary field-size-btn m-1 m-md-0">20x20</button>
+            </div>
+        </div>
+        <div class="container allocation-button-container">
+            <div class="row justify-content-center">
+                <button type="button" class="btn allocation-btn">
+                    <a class="allocation-link">Перейти к расстановке кораблей</a>
+                </button>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="../js/classes.js"></script>
+        <script src="../js/ships_location_algorithms.js"></script>
+        <script src="../js/converter.js"></script>
+        <script type="module" src="../js/settings_page.js"></script>
+    </body>
+</html>

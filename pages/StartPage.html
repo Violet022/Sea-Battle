@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/startPage.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>Sea Battle</title>
+    </head>
+    <body>
+        <div class="container logo-container">
+            <div class="row justify-content-center">
+                <img src="../images/logo.png" class="mx-auto d-block" alt="SeaBattle Logotype" width="379" height="94">
+            </div>
+        </div>
+        <div class="container rules-container text-center">
+            <p class="mb-0 font-28">Добро пожаловать в игру SeaBattle!</p>
+            <p class="mb-0 font-28">Прежде чем приступить к игре, ознакомьтесь с правилами.</p>
+            <a class="rules-link font-weight-bold text-decoration-none font-28" data-toggle="collapse" href="#fullrulestext" aria-expanded="false" aria-controls="fullrulestext">
+                Правила игры
+            </a>
+            <div class="collapse mx-auto mb-4" id="fullrulestext" style="width: 700px;">
+                <div class="card card-body text-left text-dark bg-light-blue font-18">
+                    <ol>
+                        <li>В игре принимают участие два игрока: пользователь и его противник.</li>
+                        <li>Флот кораблей размещается на поле, при этом корабли не могут касаться друг друга сторонами и углами.</li>
+                        <li>Игроки поочередно совершают выстрелы по полю оппонента.</li>
+                        <li>При выстреле игрок может попасть в клетку, не занятую кораблем (выстрел “Мимо”), в противном же случае игрок или “Ранит”, или “Убивает” корабль, в зависимости от количества палуб, и после этого имеет право совершить еще один выстрел.</li>
+                        <li>Победителем считается игрок, который первым потопил все корабли оппонента.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="container settings-button-container">
+            <div class="row justify-content-center">
+                <button type="button" class="btn btn-primary">
+                    <a class="settings-link" href="SettingsPage.html">Перейти к настройкам игры</a>
+                </button>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

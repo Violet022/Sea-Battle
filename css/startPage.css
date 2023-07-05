@@ -1,0 +1,51 @@
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    position: relative !important;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -2;
+}
+
+.font-28 {
+    font-size: 28px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.logo-container {
+    margin-top: 60px !important;
+    margin-bottom: 88px !important;
+}
+
+.rules-link {
+    display: block !important;
+    margin-top: 24px !important;
+    margin-bottom: 12px !important;
+    color: #183D71 !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.bg-light-blue {
+    background-color: #F2F9FF !important;
+}
+
+.btn-primary {
+    width: 530px;
+    height: 80px;
+    background-color: #183D71 !important;
+    border-color: #183D71 !important;
+    border-radius: 20px !important;
+}
+
+.settings-link {
+    color: white !important;
+    font-size: 30px !important;
+}

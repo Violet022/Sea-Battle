@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/GamePage.css"/>
+        <title>Sea Battle</title>
+    </head>
+    <body onselectstart="return false" onmousedown="return false">
+        <nav class="navbar navbar-light">
+            <div class="logo text-center container">
+                <img src="../images/logo.png" class="mx-auto d-block" alt="SeaBattle Logotype" width="234" height="58">
+            </div>
+        </nav>
+        <div class="container playing-field-container mx-auto p-0" style="width: 1120px;">
+            <div class="row playing-field justify-content-center mx-0" style="width: 1120px;">
+                <div class="my-playing-field-block justify-content-center">
+                    <canvas class="row my-playing-field justify-content-center mx-auto p-0" width="528" height="528">
+                        <img src="../images/playingField.png" class="mx-auto d-block my-playing-field-img" alt="SeaBattle MyPlayingField" width="528" height="528">
+                    </canvas>
+                    <p class="text-center font-32 field-owner-name-me">Я</p>
+                </div>
+                <div class="opponent-playing-field-block justify-content-center">
+                    <canvas class="row opponent-playing-field justify-content-center mx-auto p-0" width="528" height="528">
+                        <img src="../images/playingField.png" class="mx-auto d-block opponent-playing-field-img" alt="SeaBattle OpponentPlayingField" width="528" height="528">
+                    </canvas>
+                    <p class="text-center font-32 field-owner-name-opponent">ПРОТИВНИК</p>
+                </div>
+            </div>
+        </div>
+        <div class="container ships-container mx-auto p-0" style="width: 1120px;">
+            <div class="row parking-ships justify-content-center mx-auto border p-0" style=" width: 912px; height: 133px;">
+                <span class="text-center font-28 m-0 text-ships-balance" style=" width: 912px;">Осталось кораблей:</span>
+                <div class="row m-auto deck4-block">
+                    <img src="../images/deck4.png" class="mx-auto d-block deck4" alt="SeaBattle ShipDeck4" width="168.34" height="46">
+                    <span class="text-center font-28 mx-auto number-deck4"> x 1</span>
+                </div>
+                <div class="row m-auto deck3-block">
+                    <img src="../images/deck3.png" class="mx-auto d-block deck3" alt="SeaBattle ShipDeck3" width="130" height="46">
+                    <span class="text-center font-28 mx-auto number-deck3"> x 2</span>
+                </div>
+                <div class="row m-auto deck2-block">
+                    <img src="../images/deck2.png" class="mx-auto d-block deck2" alt="SeaBattle ShipDeck2" width="88" height="46">
+                    <span class="text-center font-28 mx-auto number-deck2"> x 3</span>
+                </div>
+                <div class="row m-auto deck1-block">
+                    <img src="../images/deck1.png" class="mx-auto d-block deck1" alt="SeaBattle ShipDeck1" width="46" height="46">
+                    <span class="text-center font-28 mx-auto number-deck1"> x 4</span>
+                </div>               
+            </div>
+        </div>
+        <div class="container stop-game-button-container">
+            <div class="row justify-content-center">
+                <button type="button" class="btn stop-game-btn" data-toggle="modal" data-target="#stopGameModal">
+                    <span class="text-stop-game">Завершить игру</span>
+                </button>
+            </div>
+        </div>
+        <div class="modal fade" id="stopGameModal" tabindex="-1" role="dialog" aria-labelledby="stopGameModal" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="width: 672px;">
+              <div class="modal-content" style="width: 672px; height: 210px;">
+                <div class="modal-header row justify-content-center mx-auto" style="height: 101px;">
+                    <p class="modal-title stopGameModalTitle font-32">Вы уверены?</p>
+                </div>
+                <div class="modal-footer row justify-content-center">
+                    <div class="col-auto mx-auto p-0">
+                        <button type="button" class="btn stopGameModal-yes-btn text-align-center">
+                            <a class="start-page-link" href="StartPage.html">Да</a>
+                        </button>
+                    </div>
+                    <div class="col-auto mx-auto p-0">
+                        <button type="button" class="btn stopGameModal-no-btn" data-dismiss="modal">Нет</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade" id="victoryModal" tabindex="-1" role="dialog" aria-labelledby="victoryModal" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="width: 672px;">
+              <div class="modal-content" style="width: 672px; height: 304px;">
+                <div class="modal-header row justify-content-center mx-auto p-0">
+                    <p class="modal-title victoryModalTitle font-32 p-0">Победа</p>
+                </div>
+                <div class="modal-body row row justify-content-center p-0 m-0">
+                    <p class="row victoryModalText-body m-auto font-28">Поздравляем, вы победили!</p>
+                </div>
+                <div class="modal-footer row justify-content-center p-0" style="height: 155px;">
+                    <div class="col-auto mx-auto p-0">
+                        <button type="button" class="btn settings-page-btn text-align-center p-0">
+                            <a class="settings-page-link" href="SettingsPage.html">Новая игра</a>
+                        </button>
+                    </div>
+                    <div class="col-auto mx-auto p-0">
+                        <button type="button" class="btn start-page-btn text-align-center p-0">
+                            <a class="start-page-link" href="StartPage.html">На главную</a>
+                        </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade" id="lossModal" tabindex="-1" role="dialog" aria-labelledby="lossModal" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="width: 672px;">
+              <div class="modal-content" style="width: 672px; height: 304px;">
+                <div class="modal-header row justify-content-center mx-auto p-0">
+                    <p class="modal-title lossModalTitle font-32 p-0">Поражение</p>
+                </div>
+                <div class="modal-body row row justify-content-center p-0 m-0">
+                    <p class="row lossModalText-body m-auto font-28">К сожалению, вы проиграли.</p>
+                </div>
+                <div class="modal-footer row justify-content-center p-0" style="height: 155px;">
+                    <div class="col-auto mx-auto p-0">
+                        <button type="button" class="btn settings-page-btn text-align-center p-0">
+                            <a class="settings-page-link" href="SettingsPage.html">Новая игра</a>
+                        </button>
+                    </div>
+                    <div class="col-auto mx-auto p-0">
+                        <button type="button" class="btn start-page-btn text-align-center p-0">
+                            <a class="start-page-link" href="StartPage.html">На главную</a>
+                        </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="../js/classes.js"></script>
+        <script src="../js/ships_location_algorithms.js"></script>
+        <script src="../js/converter.js"></script>
+        <script type="module" src="../js/game_page.js"></script>
+    </body>
+</html>

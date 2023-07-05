@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/ShipPlacementPage.css"/>
+        <title>Sea Battle</title>
+    </head>
+    <body onselectstart="return false" onmousedown="return false">
+        <nav class="navbar navbar-light">
+            <div class="col-2 settings-page-link">
+                <a class="navbar-brand font-24" href="SettingsPage.html" style="color: #183D71;">
+                    <span style="width: 18px; height: 18px;">
+                        <i class="fas fa-arrow-left"></i>
+                    </span>
+                    Назад
+                </a>
+            </div>
+            <div class="col-8 logo text-center">
+                <img src="../images/logo.png" class="mx-auto d-block" alt="SeaBattle Logotype" width="234" height="58">
+            </div>
+            <div class="col-2"></div>
+        </nav>
+        <div class="container playing-field-container mx-auto" style="width: 786px;">
+            <canvas class="row playing-field justify-content-center mx-auto p-0" width="528" height="528">
+                <img src="../images/playingField.png" class="mx-auto d-block playing-field-img" alt="SeaBattle PlayingField" width="528" height="528">
+            </canvas>
+            <div class="row parking-ships justify-content-center mx-auto p-2 border" style=" width: 564px; height: 129px;">
+                <img src="../images/deck4.png" class="mx-auto d-block deck4 deckShip" alt="SeaBattle ShipDeck4" width="197" height="46">
+                <img src="../images/deck3.png" class="mx-auto d-block deck3 deckShip" alt="SeaBattle ShipDeck3" width="147" height="46">
+                <img src="../images/deck2.png" class="mx-auto d-block deck2 deckShip" alt="SeaBattle ShipDeck2" width="93" height="46">
+                <img src="../images/deck1.png" class="mx-auto d-block deck1 deckShip" alt="SeaBattle ShipDeck1" width="46" height="46">
+                <img src="../images/deck3.png" class="mx-auto d-block deck3 deckShip" alt="SeaBattle ShipDeck3" width="147" height="46">
+                <img src="../images/deck2.png" class="mx-auto d-block deck2 deckShip" alt="SeaBattle ShipDeck2" width="93" height="46">
+                <img src="../images/deck2.png" class="mx-auto d-block deck2 deckShip" alt="SeaBattle ShipDeck2" width="93" height="46">
+                <img src="../images/deck1.png" class="mx-auto d-block deck1 deckShip" alt="SeaBattle ShipDeck1" width="46" height="46">
+                <img src="../images/deck1.png" class="mx-auto d-block deck1 deckShip" alt="SeaBattle ShipDeck1" width="46" height="46">
+                <img src="../images/deck1.png" class="mx-auto d-block deck1 deckShip" alt="SeaBattle ShipDeck1" width="46" height="46">
+            </div>
+        </div>
+        <div class="container ship-placement-page-button-container">
+            <div class="row justify-content-center">
+                <button type="button" class="btn auto-placement-btn">
+                    <span class="auto-placement">Авто</span>
+                </button>
+                <button type="button" class="btn start-btn">
+                    <a class="start-link" href="gamePage.html">Начать игру</a>
+                </button>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="../js/classes.js"></script>
+        <script src="../js/ships_location_algorithms.js"></script>
+        <script src="../js/converter.js"></script>
+        <script type="module" src="../js/ship_placement_page.js"></script>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    position: relative !important;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -2;
+}
+
+.font-28 {
+    font-size: 28px !important;
+}
+
+.font-24 {
+    font-size: 24px !important;
+}
+
+nav {
+    margin-top: 52px !important;
+    margin-bottom: 96px !important;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+}
+
+p {
+    margin-bottom: 52px !important;
+}
+
+.field-size-buttons-row {
+    margin-bottom: 100px !important;
+}
+
+.field-size-label-row {
+    margin-top: 80px !important;
+}
+
+.btn-primary, .btn-primary:hover{
+    color: black;
+    background-color: #C4D7F2;
+    border-color: #C4D7F2;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: none !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active{
+    color: white;
+    background-color: #5B7DAD;
+    border-color: #5B7DAD;
+}
+
+
+.btn {
+    font-size: 24px !important;
+    width: 192px !important;
+    height: 68px !important;
+    border-radius: 20px !important;
+}
+
+.allocation-btn {
+    width: 540px !important;
+    height: 80px !important;
+    background-color: #183D71;
+}
+
+.allocation-link {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.bs-tooltip-bottom .arrow::before, .bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+    border-bottom-color: #F2F9FF;
+}
+
+.tooltip-inner {
+    max-width: 400px; 
+    color: black; 
+    background-color: #F2F9FF; 
+    border-radius: 10px;
+    font-size: 18px;
+}

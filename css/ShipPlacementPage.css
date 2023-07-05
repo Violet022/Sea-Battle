@@ -1,0 +1,75 @@
+html {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    min-width: 800px !important;
+}
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    position: relative !important;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -2;
+    margin-top: 0px !important;
+}
+
+.font-24 {
+    font-size: 24px !important;
+}
+
+nav {
+    margin-top: 52px !important;
+    margin-bottom: 36px !important;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.playing-field {
+    margin-top: 0px !important;
+    margin-bottom: 28px !important;
+    padding-left: 60px !important;
+    padding-right: 60px !important; 
+}
+
+.parking-ships {
+    margin-top: 0px !important;
+    margin-bottom: 28px !important;
+    background-color: #EAF2FF !important;
+    border-color: #4C6383 !important;
+    border-width: 4px !important;
+    border-radius: 20px !important;
+}
+
+.btn {
+    font-size: 28px !important;
+    height: 63px !important;
+    border-radius: 20px !important;
+}
+
+.auto-placement-btn {
+    margin-right: 51px !important;
+    margin-top: 0px !important;
+    margin-bottom: 102px !important;
+    width: 113px !important;
+    background-color:  #5B7DAD;
+}
+
+.start-btn {
+    margin-top: 0px !important;
+    margin-bottom: 102px !important;
+    width: 220px !important;
+    background-color: #183D71;
+}
+
+.start-link, .auto-placement {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.deck4, .deck3, .deck2, .deck1 {
+    cursor: pointer;
+}
